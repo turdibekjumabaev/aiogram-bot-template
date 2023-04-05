@@ -7,10 +7,10 @@ from utils.set_bot_commands import set_default_commands
 
 
 async def on_startup(dispatcher):
-    # Birlamchi komandalar (/star va /help)
+    # Baslanģısh buyrıqlar (/star hám /help)
     await set_default_commands(dispatcher)
 
-    # Bot ishga tushgani haqida adminga xabar berish
+    # Bot iske túskenligi haqqında adminge xabar beriw
     await on_startup_notify(dispatcher)
 
 
